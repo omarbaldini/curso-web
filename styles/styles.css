@@ -1,0 +1,87 @@
+/** ESTILOS GENERALES **/
+
+*{ 
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* header */
+
+header{
+    background-color: #fffbfb;
+}
+
+h1{
+    font-family: "Original Surfer", sans-serif;
+    color: #e69679;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.esloganp{
+    font-size: 1.5rem;
+    color: #22b4e0;
+}
+
+/* main */
+
+
+main{
+    background-color: #fafaed;
+}
+
+h2{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.1rem;
+    font-weight: 700;
+    
+}
+
+p{
+    font-size: 1rem; 
+}
+
+
+
+.indexh2{
+    color: #68357e;
+}
+
+.conocenosh2{
+    color: #3a3aff;
+}
+
+.productosh2{
+    color: #22b4e0;
+}
+
+.localesh2{
+    color: #8d6244;
+    text-decoration: underline;
+}
+
+.contactoh2 {
+    color: #7992c0;
+}
+
+/* footer */
+
+footer{
+background-color: #fffbfb;
+}
