@@ -14,8 +14,11 @@
 </head>
 <body>
     <header>
+        <div class="header">
+        <div class="headerh1yp">
         <h1>BALGELATO</h1>
         <p class="esloganp">il vero gelato</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -23,19 +26,21 @@
                 <li><a href="./conocenos.html">Conocenos</a></li>
                 <li><a href="./locales.html">Locales</a></li>
                 <li><a href="#">Contacto</a></li>
-            </ul> 
+            </ul>
+        </div> 
         </nav>
     </header>
     <main>
-        <div>
+        <div class="banner"> 
             <figure><img src="../assets/heladocucu.jpg" alt="bocha de helado de chocolate y crema en cucurucho"></figure>
         </div>
-        <section>
+        <section class="sectioncontacto">
             <h2 class="contactoh2">Horarios de atencion</h2>
             <p>todos los dias de 12:30 a 24hs</p>
         </section>
-        <section>
+        <section class="sectioncontacto">
             <h2 class="contactoh2">Dejanos tu consulta</h2>
+            <div>
             <form action="">
                 <label for="nombreapellido">Nombre y apellido</label>
                 <input type="text" id="nombreapellido" placeholder="Ej: lucas perez" required>
@@ -46,6 +51,7 @@
                 <label for="mensaje">Mensaje</label>
                 <textarea name="" id="mensaje" placeholder="Escriba su mensaje" required></textarea>
                 <input type="submit" value="Enviar">
+            </div>    
             </form>
         </section>
     </main>
