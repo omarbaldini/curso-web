@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BALGELATO | productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +14,34 @@
 </head>
 <body>
     <header>
-        <section class="indexheadercontenedorssup">
-        <h1>BALGELATO</h1>
-        <p class="esloganp">il vero gelato</p>
-        <nav class="indexheadernav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="./conocenos.html">Conocenos</a></li>
-                <li><a href="./locales.html">Locales</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul> 
-        </nav>
-        </div>
+<nav class="navbar navbar-expand-lg fixed-top fondonav">
+    <section class="container-fluid">
+    <h1>BALGELATO</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <section class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./conocenos.html">Conocenos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./locales.html">locales</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+        </li> 
+    </ul>
+    </section>
+    </section>
+</nav>
     </header>
     <main>
         <div class="banner">
@@ -83,10 +98,35 @@
                 </article>
                 </div>
         </section>
+        <section class="galeriagrid">
+            <article class="grid1erfoto">
+                <img class="imagengrid" src="../assets/gcuartokilo.jpg" alt="cuarto kilo de helado">
+            </article>
+            <article class="grid2dafoto">
+                <img class="imagengrid" src="../assets/gcucurucho.jpg" alt="cucuruco con bocha de helado">
+            </article>
+            <article class="grid3rafoto">
+                <img class="imagengrid" src="../assets/gsaboreshelado.jpg" alt="fuentes con helados artesanales">
+            </article>
+            <article class="grid4tafoto">
+                <img class="imagengrid" src="../assets/gpaleta.jpg" alt="paleta helada">
+            </article>
+            <article class="grid5tafoto">
+                <img class="imagengrid" src="../assets/gvasitohelado.jpg" alt="vasito con helado">
+            </article>
+            <article class="grid6tafoto">
+                <img class="imagengrid" src="../assets/gvasitos.jpg" alt="vasitos con multiples sabores de helado">
+            </article>
+        </section>
     </main>
     <footer>
         <a href="https://www.instagram.com/xeltaheladeria/" target="_blank">
         <img src="../assets/instagram.png" alt="Logo con redireccionamiento al perfil de instagram">
         </a>
         <p>&copy; 2026 - Todos los derechos reservados.</p>
-    </footer>        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>   
+    </body>
+    </html>                

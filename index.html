@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BALGELATO | inicio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
@@ -15,18 +15,34 @@
 <body>
     <header class="indexheader">
         <div class="oscurecerfondo">
-        <section class="indexheadercontenedorssup">
-        <h1>BALGELATO</h1>
-        <p class="esloganp">il vero gelato</p>
-        <nav class="indexheadernav">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/conocenos.html">Conocenos</a></li>
-                <li><a href="./pages/locales.html">Locales</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul> 
-        </nav>
+    <nav class="navbar navbar-expand-lg fixed-top fondonav">
+    <section class="container-fluid">
+    <h1>BALGELATO</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <section class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./pages/productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./pages/conocenos.html">Conocenos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./pages/locales.html">locales</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+        </li> 
+    </ul>
+    </section>
+    </section>
+    </nav>
         </section>    
         <section class="indexheadercontenedorinf">
         <h2 class="indexheaderh2">¡Endulza tu día con nuestra variedad. El placer del helado en cada bocado. La vida es corta, hacela dulce!</h2>
@@ -53,6 +69,32 @@
         <p>Contamos con una fábrica equipada con la más alta tecnología, vehículos refrigerados para distribución y personal altamente capacitado para brindar un servicio de calidad.</p>
     </article>
 </section>
+                <section id="carouselindex" class="carousel slide w-75 mx-auto">
+                <section class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselindex" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselindex" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselindex" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </section>
+                <section class="carousel-inner">
+                    <article class="carousel-item active">
+                    <img src="./assets/ccucuruchocielo.jpg" class="d-block w-100" alt="cucurucho helado con el cielo de fondo">
+                    </article>
+                    <article class="carousel-item">
+                    <img src="./assets/cheladosart.jpg" class="d-block w-100" alt="helados multiples artesanales">
+                    </article>
+                    <article class="carousel-item">
+                    <img src="./assets/cvasitosycucuruchos.jpg" class="d-block w-100" alt="vasitos y cucuruchos de masa pan">
+                    </article>
+                </section>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselindex" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselindex" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </section>
         <section class="sectioncardindex">
                 <h2 class="indexh2"> Nuestros Productos </h2>
                 <div class="cardsection">
@@ -101,5 +143,9 @@
         </a>
         <p>&copy; 2026 - Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous">
+    </script>
 </body>
 </html>

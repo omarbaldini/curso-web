@@ -12,40 +12,16 @@
 
 a{
     text-decoration: none;
-    color: #fff
-}
-
-
-li {
-    list-style: none;
-    color: #fff;
 }
 
 
 /* header */
-
-.indexheadernav{
-    display: flex;
-    justify-content: center;
-}
-
-.indexheadercontenedorssup{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background-color: #000000;
-    width: 100%;
-    padding: 1rem;
-}
 
 .indexheader { 
     background-image: url("../assets/heladoartesanal.jpg");
     height: 95vh;
     background-attachment: fixed;
     position: relative;
-
 }
 
 .oscurecerfondo{
@@ -53,6 +29,23 @@ li {
     height: 100%;
     background-color: hsla(0, 0%, 0%, 0.603);
 }
+
+nav{
+    margin-top: 30px;
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 15);
+    position: sticky; top: 20px;
+}
+
+.fondonav{
+    background-color: rgba(255, 255, 255, 0.822);
+    padding: 20px;
+}
+
 
 .indexheadercontenedorinf{
     display: flex;
@@ -78,31 +71,33 @@ li {
     text-align: center;
 }
 
-.headerh1yp {
-    display: flex;
-    flex-direction: column;
-
+.indexheaderpedido:focus{
+    background-color: #68357e;
+    color: #fff;
+    transition: 0.4s;
 }
 
-header nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px
+.nav-link:hover{
+    background-color: #79a8dd;
+    color: #19198d;
+    border-radius: 10px;
+    transition: 1s;
 }
 
 
 h1{
     font-family: "Original Surfer", sans-serif;
     color: #c47e65;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
-.esloganp{
-    font-size: 1.5rem;
-    color: #0b7285;
+input:active{
+    background-color: #f58c67;
+    color: #86162d;
+    transition: 0.4s;
 }
+
 
 @media (min-width:600px) {
 .indexheadercontenedorssup,  .indexheadernav ul{
@@ -147,6 +142,21 @@ h1{
     font-size: 0.9rem;
 }
 
+    .galeriagrid {
+    display: grid;
+    grid-template-areas: 
+    "grid1erfoto grid2dafoto grid3rafoto" 
+    "grid4tafoto grid5tafoto grid6tafoto";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr); 
+    gap: 5px;
+}
+    
+
+.imagengrid{
+    width: 100%
+}
+
 .grid1erhijo{
     grid-area: grid1erhijo;
 }
@@ -164,7 +174,29 @@ h1{
     grid-area: grid4tohijo;
 }
         
+.grid1erfoto{
+    grid-area: grid1erfoto;
+}
 
+.grid2dafoto{
+    grid-area: grid2dafoto;
+}
+
+.grid3rafoto{
+    grid-area: grid3rafoto;
+}
+
+.grid4tafoto{
+    grid-area: grid4tafoto;
+}
+
+.grid5tafoto{
+    grid-area: grid5tafoto;
+}
+
+.grid6tafoto{
+    grid-area: grid6tafoto;
+}
 
 main{
     background-color: #fafaed;
@@ -246,9 +278,6 @@ p{
 
 }
 
-section{
-    margin: 30px 0;
-}
 
 .cardtestimonio{
     border: solid  #000000;
@@ -345,7 +374,22 @@ input::placeholder, textarea::placeholder {
     grid-template-rows: repeat(2, 1fr);
     gap: 8px;
 }
+
+    .galeriagrid {
+    display: grid;
+    grid-template-areas: 
+    "grid1erfoto grid2dafoto grid3rafoto grid4tafoto grid5tafoto grid6tafoto";
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1, 1fr); 
+    gap: 8px;
+}
     
+
+.imagengrid{
+    width: 100%
+}
+
+
 .contenedorgrid article{
     background-color: #c9a598;
     padding: 1rem;
@@ -370,7 +414,7 @@ input::placeholder, textarea::placeholder {
     grid-template-areas: 
     "grid1erhijo grid1erhijo grid2dohijo" 
     "grid3erhijo grid4tohijo grid2dohijo" ;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 8px;
 }
@@ -379,6 +423,21 @@ input::placeholder, textarea::placeholder {
     background-color: #79a8dd;
     padding: 1rem;
 }
+
+    .galeriagrid {
+    display: grid;
+    grid-template-areas: 
+    "grid1erfoto grid2dafoto grid3rafoto grid4tafoto grid5tafoto grid6tafoto";
+    grid-template-columns: repeat(6,1fr); 
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+}
+    
+
+.imagengrid{
+    width: 100%
+}
+
 
 }
 /* footer */
